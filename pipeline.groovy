@@ -37,7 +37,7 @@ pipeline {
         stage('Run') {
             steps {
                 script {
-                    docker.run('-d -p 8000:3000 --name my-node-server node-image')
+                    docker.run('-d -p 5000:3000 --name my-node-server node-image')
                 }
             }
         }
